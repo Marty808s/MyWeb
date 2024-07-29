@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../index.css';
 import logo from '../graphics/logo.svg';
 import { useState } from 'react';
@@ -35,9 +36,8 @@ function Nav() {
         </div>
         <div className="hidden sm:ml-6 sm:block">
           <div className="flex space-x-4">
-
-            <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">About</a>
-            <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+            <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">About</a>
+            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
           </div>
         </div>
       </div>
@@ -48,8 +48,8 @@ function Nav() {
   {isMobileMenuOpen && (
     <div className="sm:hidden" id="mobile-menu">
       <div className="space-y-1 px-2 pb-3 pt-2">
-        <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">About</a>
-        <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+          <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">About</a>
+          <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
       </div>
     </div>
   )}
